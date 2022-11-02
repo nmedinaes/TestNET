@@ -1,4 +1,4 @@
-# Prueba .NET 
+# Prueba .NET (Duración: 2h 45 mins)
 ```
 Nicolás Esteban Medina Ramírez
 Email: nicolasmeddina789@gmail.com
