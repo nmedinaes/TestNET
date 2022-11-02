@@ -1,0 +1,719 @@
+{
+	"info": {
+		"_postman_id": "63e9ddde-a4c2-42ce-aed8-61fd7a86eb18",
+		"name": "TestNET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Curso (1)",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Curso",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Curso/GetById?Id=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Curso",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"11-6\",\r\n    \"Descripcion\": \"Jornada Mañana\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Curso/Save",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Curso",
+								"Save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 5,\r\n    \"Nombre\": \"11-7\",\r\n    \"Descripcion\": \"Jornada Tarde\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Curso/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Curso",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 5,\r\n    \"Nombre\": \"11-7\",\r\n    \"Descripcion\": \"Jornada Tarde\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Curso/Delete",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Curso",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profesor (2)",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Profesor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Profesor/GetById?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Profesor",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cedula\": \"1002397577\",\r\n    \"Nombres\": \"Carlos\",\r\n    \"Apellidos\": \"Ramirez\",\r\n    \"Email\": \"carlos@test.com\",\r\n    \"Telefono\": \"3117599194\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Profesor/Save",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Profesor",
+								"Save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 4,\r\n    \"Cedula\": \"10023975001\",\r\n    \"Nombres\": \"HOLA\",\r\n    \"Apellidos\": \"Ramires\",\r\n    \"Email\": \"carlos1@test.com\",\r\n    \"Telefono\": \"3117599191\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Profesor/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Profesor",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 4,\r\n    \"Cedula\": \"10023975001\",\r\n    \"Nombres\": \"HOLA\",\r\n    \"Apellidos\": \"Ramires\",\r\n    \"Email\": \"carlos1@test.com\",\r\n    \"Telefono\": \"3117599191\",\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Profesor/Delete",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Profesor",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudiante (3)",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Estudiante",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Estudiante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Estudiante/GetById?Id=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Estudiante",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cedula\": \"1002397563\",\r\n    \"Nombres\": \"Nicolas\",\r\n    \"Apellidos\": \"Medina\",\r\n    \"Email\": \"nico3@test.com\",\r\n    \"Telefono\": \"3117599193\",\r\n    \"CursoId\": 2,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Estudiante/Save",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Estudiante",
+								"Save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 5,\r\n    \"Cedula\": \"1002397563\",\r\n    \"Nombres\": \"Nicolas\",\r\n    \"Apellidos\": \"Medina\",\r\n    \"Email\": \"nico3@test.com\",\r\n    \"Telefono\": \"3117599193\",\r\n    \"CursoId\": 2,\r\n    \"Activo\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Estudiante/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Estudiante",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 5,\r\n    \"Cedula\": \"1002397563\",\r\n    \"Nombres\": \"Nicolas\",\r\n    \"Apellidos\": \"Medina\",\r\n    \"Email\": \"nico3@test.com\",\r\n    \"Telefono\": \"3117599193\",\r\n    \"CursoId\": 2,\r\n    \"Activo\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Estudiante/Delete",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Estudiante",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Materia (4)",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Materia",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Materia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Materia/GetById?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Materia",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"CIENCIAS SOCIALES\",\r\n    \"Descripcion\": \"EDUCACION\",\r\n    \"Semestre\": \"6\",\r\n    \"ProfesorId\": 2,\r\n    \"CursoId\": 2,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Materia/Save",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Materia",
+								"Save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1,\r\n    \"Nombre\": \"CIENCIAS\",\r\n    \"Descripcion\": \"EDUCACION\",\r\n    \"Semestre\": \"6\",\r\n    \"ProfesorId\": 2,\r\n    \"CursoId\": 2,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Materia/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Materia",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1,\r\n    \"Nombre\": \"CIENCIAS\",\r\n    \"Descripcion\": \"EDUCACION\",\r\n    \"Semestre\": \"6\",\r\n    \"ProfesorId\": 2,\r\n    \"CursoId\": 2,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Materia/Delete",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Materia",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nota (5)",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Nota",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Nota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44371/api/Nota/GetById?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Nota",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TotalNota\": 3.5,\r\n    \"Descripcion\": \"OK\",\r\n    \"MateriaId\": 2,\r\n    \"EstudianteId\": 3,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Nota/Save",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Nota",
+								"Save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1,\r\n    \"TotalNota\": 3.5,\r\n    \"Descripcion\": \"PERDON\",\r\n    \"MateriaId\": 2,\r\n    \"EstudianteId\": 4,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Nota/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Nota",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 1,\r\n    \"TotalNota\": 3.5,\r\n    \"Descripcion\": \"PERDON\",\r\n    \"MateriaId\": 2,\r\n    \"EstudianteId\": 4,\r\n    \"Activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44371/api/Nota/Delete",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44371",
+							"path": [
+								"api",
+								"Nota",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
